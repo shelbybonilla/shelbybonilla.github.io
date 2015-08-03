@@ -29,8 +29,14 @@ body h1, body h3 {
 @media (min-width: 768px) {
   body h1, h1 {
     line-height: 1.6em;
-    margin: 0;
+    margin: 0 0 16px;
     padding: 0;
+  }
+
+  body h1 span.underline,
+  h1 span.underline {
+    background: url('../img/name_line.svg') bottom no-repeat;
+    padding-bottom: 16px;
   }
 
   body h3, h3 {
@@ -43,12 +49,18 @@ body h1, body h3 {
 
 @media (max-width: 768px) {
   body h1, h1 {
-    margin: 50px 0 0;
+    margin: 50px 0 28px;
     font-size: 2.6em;
     text-align: center;
     line-height: 1.6em;
   }
-  
+
+  body h1 span.underline,
+  h1 span.underline {
+    background: url('../img/name_line.svg') bottom no-repeat;
+    padding-bottom: 16px;
+  }
+
   body h3, h3 {
     margin: 0;
     font-size: 1.8em;
@@ -190,9 +202,9 @@ footer .animate {
 }
 
 footer a:hover > .circle {
-  border-color: #33cccc;
+  border-color: #33ccff;
 }
 
 footer a:hover > h4 {
-  color: #33cccc;
+  color: #33ccff;
 }
