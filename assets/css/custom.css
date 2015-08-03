@@ -1,3 +1,38 @@
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle {
+  background: none;
+  border: none;
+}
+
+.navbar-toggle .icon-bar {
+  height: 3px;
+  background-color: none;
+}
+
+body nav.navbar-default {
+  background: none;
+  border: none;
+}
+
+body nav.navbar-default ul li.active {
+  background: none;
+  border-bottom: 2px solid #33ccff;
+}
+
+body .navbar-default .navbar-nav > li > a {
+  color: #000000;
+  font-weight: bold;
+}
+
+body nav.navbar-default .navbar-nav > .active > a {
+  background: none;
+  color: #000000;
+}
+
+body nav.navbar-default .navbar-nav > .active > a:hover {
+  background: none;
+  color: #000000;
+}
+
 body p, p {
   color: #333333;
   font-size: 1.188em;

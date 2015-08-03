@@ -10,6 +10,7 @@ h1 span.underline {
 
 a.thumbnail {
   height: 200px;
+  margin-bottom: 30px;
 }
 
 a.thumbnail img {
