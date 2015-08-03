@@ -1,0 +1,36 @@
+body p, p {
+  color: #333333;
+  font-size: 1.188em;
+  line-height: 1.3em;
+}
+
+body h1, h1 {
+  color: #000000;
+  font-size: 4.2em;
+}
+
+@media (min-width: 768px) {
+  .fade-in {
+    opacity: 0;
+    -webkit-transition: opacity 1.3s ease-in;
+       -moz-transition: opacity 1.3s ease-in;
+        -ms-transition: opacity 1.3s ease-in;
+         -o-transition: opacity 1.3s ease-in;
+            transition: opacity 1.3s ease-in;
+  }
+}
+
+@media (max-width: 768px) {
+  .fade-in {
+    opacity: 0;
+    -webkit-transition: opacity 0.5s ease-in;
+       -moz-transition: opacity 0.5s ease-in;
+        -ms-transition: opacity 0.5s ease-in;
+         -o-transition: opacity 0.5s ease-in;
+            transition: opacity 0.5s ease-in;
+  }
+}
+
+.visible {
+  opacity: 1;
+}

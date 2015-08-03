@@ -1,0 +1,198 @@
+/*
+ * Globals
+ */
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+}
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+  height: 100%;
+  background-color: #000000;
+  position: relative;
+}
+
+body h1, body h3 {
+  color: #fff;
+}
+
+@media (min-width: 768px) {
+  body h1, h1 {
+    line-height: 1.6em;
+    margin: 0;
+    padding: 0;
+  }
+
+  body h3, h3 {
+    margin: 0;
+    font-size: 2.3em;
+    line-height: 1.4em;
+  }
+
+}
+
+@media (max-width: 768px) {
+  body h1, h1 {
+    margin: 50px 0 0;
+    font-size: 2.6em;
+    text-align: center;
+    line-height: 1.6em;
+  }
+  
+  body h3, h3 {
+    margin: 0;
+    font-size: 1.8em;
+    line-height: 1.4em;
+  }
+  
+  .gear {
+    margin-top: 56px;
+  }
+}
+
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+.site-wrapper {
+  display: table;
+  width: 100%;
+  height: 100%; /* For at least Firefox */
+  min-height: 100%
+}
+.site-wrapper-inner {
+  display: table-cell;
+  vertical-align: top;
+}
+.cover-container {
+/*
+  margin-right: auto;
+  margin-left: auto;
+*/
+}
+
+/* Padding for spacing */
+.inner {
+  padding: 30px;
+}
+
+
+/*
+ * Header
+ */
+.masthead-brand {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.masthead-nav > li {
+  display: inline-block;
+}
+.masthead-nav > li + li {
+  margin-left: 20px;
+}
+.masthead-nav > li > a {
+  padding-right: 0;
+  padding-left: 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff; /* IE8 proofing */
+  color: rgba(255,255,255,.75);
+  border-bottom: 2px solid transparent;
+}
+.masthead-nav > li > a:hover,
+.masthead-nav > li > a:focus {
+  background-color: transparent;
+  border-bottom-color: #a9a9a9;
+  border-bottom-color: rgba(255,255,255,.25);
+}
+.masthead-nav > .active > a,
+.masthead-nav > .active > a:hover,
+.masthead-nav > .active > a:focus {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+@media (min-width: 768px) {
+  .masthead-brand {
+    float: left;
+  }
+  .masthead-nav {
+    float: right;
+  }
+}
+
+/*
+ * Affix and center
+ */
+
+@media (min-width: 768px) {
+  /* Pull out the header and footer */
+  .masthead {
+    position: fixed;
+    top: 0;
+  }
+  .mastfoot {
+    position: fixed;
+    bottom: 0;
+  }
+  /* Start the vertical centering */
+  .site-wrapper-inner {
+    vertical-align: middle;
+  }
+  /* Handle the widths */
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
+}
+
+@media (min-width: 992px) {
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 700px;
+  }
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  margin-top: -20px;
+  width: 100%;
+}
+
+footer .circle {
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border: 2px solid #ffffff;
+  width: 15px;
+  height: 15px;
+  margin: 0 auto 30px;
+}
+
+footer .animate {
+  -webkit-transition: all 0.15s ease-in;
+     -moz-transition: all 0.15s ease-in;
+      -ms-transition: all 0.15s ease-in;
+       -o-transition: all 0.15s ease-in;
+          transition: all 0.15s ease-in;
+}
+
+footer a:hover > .circle {
+  border-color: #33cccc;
+}
+
+footer a:hover > h4 {
+  color: #33cccc;
+}
